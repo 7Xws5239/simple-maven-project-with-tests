@@ -28,28 +28,38 @@ import org.junit.Test;
 
 public class SomeTest extends Base {
 
-    @Test public void test1() {
-        run();
+    @Test
+    public void testAddPositiveNumbers() {
+        // 测试两个正数相加
+        int result = add(5, 3);
+        assertEquals(8, result);  // 5 + 3 应该等于 8
     }
 
-    @Test public void test2() {
-        run();
+    @Test
+    public void testAddNegativeNumbers() {
+        // 测试两个负数相加
+        int result = add(-5, -3);
+        assertEquals(-8, result);  // -5 + -3 应该等于 -8
     }
 
-    @Test public void test3() {
-        run();
+    @Test
+    public void testAddPositiveAndNegative() {
+        // 测试正数和负数相加
+        int result = add(5, -3);
+        assertEquals(2, result);  // 5 + -3 应该等于 2
     }
 
-    @Test public void test4() {
-        run();
+    @Test
+    public void testAddZero() {
+        // 测试加零的情况
+        int result = add(5, 0);
+        assertEquals(5, result);  // 5 + 0 应该等于 5
     }
 
-    @Test public void test5() {
-        run();
+    @Test
+    public void testAddBothZeros() {
+        // 测试两个零相加
+        int result = add(0, 0);
+        assertEquals(0, result);  // 0 + 0 应该等于 0
     }
-
-    @Test public void test6() {
-        run();
-    }
-
 }

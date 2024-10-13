@@ -29,13 +29,8 @@ import org.junit.internal.AssumptionViolatedException;
 
 class Base {
 
-    protected void run() {
-        double r = Math.random();
-        if (r < 0.1) {
-            fail("oops");
-        } else if (r < 0.2) {
-            throw new AssumptionViolatedException("skipping");
-        }
+    // 实际执行加法操作的方法
+    protected int add(int a, int b) {
+        return a + b;
     }
-
 }
