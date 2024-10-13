@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.8.1' // 确保 Maven 安装在 Jenkins 中，并且配置好工具名
-        jdk 'JDK 11'         // 确保 JDK 安装在 Jenkins 中，并配置好工具名
+        maven 'maven3.9.9' // 确保 Maven 安装在 Jenkins 中，并且配置好工具名
+        jdk 'openjdk'         // 确保 JDK 安装在 Jenkins 中，并配置好工具名
     }
 
     stages {
